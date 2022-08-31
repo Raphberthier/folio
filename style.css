@@ -1,0 +1,227 @@
+
+main {
+    background-image: url(images/virtualisation.webp);
+    background-size: cover;
+}
+:focus-visible{
+    border: 3px solid red;
+}
+li {
+    list-style-type:none;
+}
+
+.banner {
+    background-image:url(images/27338003.webp);
+    background-position: center;
+    
+    height: 500px;
+    
+  
+}
+.txt {
+    
+    padding: 30px ;
+    animation:  4s linear 0s both banner ;
+    color: white;
+}
+
+/* Animation */
+
+@keyframes banner {
+    from {
+        opacity: 0;
+        height: 0px;
+    }
+    to {
+        opacity: 1;
+        height: 500px;
+    }
+}
+
+
+
+@keyframes slidein {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
+.article {
+     animation: 2s linear 0s both slidein;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.dispo {
+   
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(167, 167, 167);
+    background: linear-gradient(rgba(255, 255, 255, 0.900), rgba(253, 253, 253, 0.900));
+}
+.exp {
+    
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(167, 167, 167);
+    background: linear-gradient(rgba(255, 255, 255, 0.900), rgba(253, 253, 253, 0.900));
+}
+.contener_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+
+.creation {
+    
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(167, 167, 167);
+    background: linear-gradient(rgba(255, 255, 255, 0.900), rgba(253, 253, 253, 0.900));
+}
+.porte-folio{
+    animation: 2s linear 2s both slidein;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+   
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background: linear-gradient(rgba(255, 255, 255, 0.500), rgba(253, 253, 253, 0.500));;
+    
+}
+.tilte-folio {
+    background: linear-gradient(rgba(255, 255, 255, 0.750), rgba(253, 253, 253, 0.750));;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    animation: 2s linear 2s both slidein;
+}
+.folio {
+    width: 300px ;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    
+    
+}
+.folio:hover{
+    
+    transform: scale(1.2);
+}
+.desFolio {
+    
+    padding: 10px;
+    border-radius: 9px;
+    background-color: white;
+    width: 280px;
+    
+   
+}
+.card-folio {
+    display: flex ;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+
+}
+.redirection {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.carousel {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer ul {
+    display: flex;
+}
+.social_list {
+    display: flex;
+    
+    justify-content: space-evenly;
+
+}
+.layout_footer_end {
+    text-decoration: none;
+}
+
+
+
+@media  (max-width: 414px ) {
+    
+    .banner {
+        width: -webkit-fill-available;
+        margin: 0px 15px 0px 20px ;
+    }
+    
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 15px 0px 20px ;
+    }
+
+    .dispo {
+        width: -webkit-fill-available;
+    }
+
+    .exp {
+        width: -webkit-fill-available;
+    }
+    .redirection{
+        z-index: 99999;
+    }
+    .creation {
+        width: -webkit-fill-available;
+    }
+
+    .folio {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+    }
+    .carousel {
+        opacity: 1;
+        width: auto;
+        height: auto;
+        
+    }
+    .porteFolioMedia {
+        width: -webkit-fill-available;
+        z-index: 1;
+    }
+}
+
+@media (max-width:820px) {
+    .nav {
+        justify-content: center;
+    }
+}
